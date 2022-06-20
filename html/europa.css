@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'TS Block', cursive;
+}
+
+.home {
+    min-height: 100vh;
+    background-image: url(images/uel.jpg);
+	width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 80px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration:none;
+    font-size: 24px;
+
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fa7900;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width:100%;
+
+}
+
+.dropbtn {
+background-color: transparent;
+color: white;
+padding: 16px;
+font-size: 24px;
+border: none;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f12d;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: rgb(255, 255, 255);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+font-family: Bebas Neue;
+font-size: 24px;
+}
+
+.dropdown-content a:hover {background-color: rgb(243, 140, 6);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+    background-color: #00d9fa23;
+    border-radius: 20px;
+}
+
+.text-box {
+    width: 100%;
+	font-size: 22px;
+    color:#fff;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-52%,-50%);
+}
+
+.text-box h1 {
+    font-size: 24px;
+    text-shadow: 4px 4px black;
+    font-family: Lemon Milk;
+}
+
+.records-widgets p {
+    font-family: lemon milk;
+}
+
+.records {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+
+}
+.image {
+    flex-basis: 31%;
+    border-radius: 40px;
+    margin-bottom: 5%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.records {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+
+}
+
+.records h1 {
+	align-self: center;
+}
+.winner img {
+    flex-basis: 31%;
+	border-radius: 40px;
+    margin-bottom: 5%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+	float: right;
+}
+
+.top img {
+    flex-basis: 31%;
+    margin-bottom: 5%;
+	border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+	float: left;
+}
+
+.cleansheet img {
+    flex-basis: 31%;
+    margin-bottom: 5%;
+	border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+	float: left;
+}
